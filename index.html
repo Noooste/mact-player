@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .no_select {
+            cursor: default;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .point {
+            position: absolute;
+            border-radius: 100%;
+            width: 10px;
+            height: 10px;
+            background: black;
+        }
+
+        .innerInformation {
+            display: none;
+        }
+
+        #information {
+
+            position: absolute;
+            display: none;
+            color: gray;
+            text-align: center;
+        }
+
+        #timestamp {
+            color: black;
+        }
+
+        #coordinates {
+            color: black;
+        }
+
+    </style>
+</head>
+<body class="no_select">
+<div id="information" class="no_select">
+    timestamp : <span id="timestamp" class="no_select"></span>
+    <br>
+    coordinates : <span id="coordinates" class="no_select"></span>
+</div>
+<div id='plot'></div>
+</body>
+<script src="./public/plot.js"></script>
+</html>
