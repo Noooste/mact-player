@@ -1,4 +1,4 @@
-# mact-player
+# akamai mact-player
 
 - start `index.html`
 - maintain click to show your mouse's path
